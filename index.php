@@ -16,9 +16,10 @@ require("vendor/autoload.php");
 $f3 = Base::Instance();
 
 //Define a default route
-$f3->route("GET /", function () {
+$f3->route("GET /breakfast", function () {
     $view = new Template();
-    echo $view->render("views/food.html");
+    echo $view->render("views/breakfast.html");
+
 });
 
 //Run f3
